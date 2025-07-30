@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedHot Concepts || Creative Solutions for a Digital World</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <style>
+        @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        .animate-fade-in {
+        animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .animate-on-scroll {
+        opacity: 0;
+        }
+
+        .fade-in-delay-100 { animation-delay: 0.1s; animation: fadeInUp 0.8s ease-out forwards; }
+        .fade-in-delay-200 { animation-delay: 0.2s; animation: fadeInUp 0.8s ease-out forwards; }
+        .fade-in-delay-300 { animation-delay: 0.3s; animation: fadeInUp 0.8s ease-out forwards; }
+        .fade-in-delay-400 { animation-delay: 0.4s; animation: fadeInUp 0.8s ease-out forwards; }
+        .fade-in-delay-500 { animation-delay: 0.5s; animation: fadeInUp 0.8s ease-out forwards; }
+        .fade-in-delay-600 { animation-delay: 0.6s; animation: fadeInUp 0.8s ease-out forwards; }
+        .fade-in-delay-700 { animation-delay: 0.7s; animation: fadeInUp 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-[url('assets/studio-bg.webp')] bg-center bg-cover bg-no-repeat bg-fixed text-[#F0E5CF] scroll-smooth font-['Raleway'] tracking-wide overflow-x-hidden">
+    <div class="bg-black/70 min-h-screen max-w-screen m-auto">
+        <nav class="bg-stone-400/20 p-2 sticky top-0 z-10">
+            <div class="container mx-auto flex items-center justify-between">
+                <img src="assets/Screenshot_2025-07-11_163422-removebg-preview.png" class="h-12 p-0 flex justify-end" alt="RedHot Group Logo">
+                <button id="menu-toggle" class="text-rose-200 hover:text-rose-500 md:hidden focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <ul id="menu" class="transition-all duration-300 hidden flex-col md:flex md:flex-row md:space-x-4 md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-stone-700/90 md:bg-transparent text-center md:text-right z-20">
+                    <li><a href="index.html" class="block py-2 md:py-0 text-rose-200 hover:text-rose-500 hover:underline mx-6">Home</a></li>
+                    <li><a href="RedhotConcept.html" class="block py-2 md:py-0 text-rose-200 hover:text-rose-500 hover:underline mx-6">RedhotConcept</a></li>
+                    <li><a href="Doubledoors.html" class="block py-2 md:py-0 text-rose-200 hover:text-rose-500 hover:underline mx-6">Double Doors Studios</a></li>
+                    <li><a href="TEFFEST.html" class="block py-2 md:py-0 text-rose-200 hover:text-rose-500 hover:underline mx-6">TEFFEST</a></li>
+                    <li><a href="Oseal.html" class="block py-2 md:py-0 text-rose-200 hover:text-rose-500 hover:underline mx-6">Oseal</a></li>
+                    <li><a href="#contact" class="block py-2 md:py-0 text-rose-200 hover:text-rose-500 hover:underline mx-6">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="bg-white/10 w-full backdrop-blur-md shadow-lg p-6 sm:p-8 space-y-8 text-center sm:text-left animate-fade-in opacity-0 animate-on-scroll">
+            <h3 class="text-2xl sm:text-3xl font-bold text-[#f6d9b4] text-center fade-in-delay-100">RedHot Concepts</h3>
+            <div class="grid sm:grid-cols-3 min-h-screen(100vh-300px) gap-6 mt-8">
+                <div class="text-center">
+                    <i class="fa-solid fa-bullhorn text-3xl text-rose-500"></i>
+                    <img class="w-72 mb-6 mx-auto rounded-lg " src="assets/pr.webp" alt="">
+                    <p class="mt-2 text-sm font-semibold text-stone-100">Public Relations</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-video text-3xl text-rose-500"></i>
+                    <img class="w-72 mb-6 mx-auto rounded-lg " src="assets/content.webp" alt="">
+                    <p class="mt-2 text-sm font-semibold text-stone-100">Content Production</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-lightbulb text-3xl text-rose-500"></i>
+                    <img class="w-72 mb-6 mx-auto rounded-lg " src="assets/brand strategy.webp" alt="">
+                    <p class="mt-2 text-sm font-semibold text-stone-100">Brand Strategy</p>
+                </div>
+            </div>
+            <div class="text-center sm:text-lg leading-relaxed text-stone-100 fade-in-delay-200">
+                <div class="mt-6 md:w-[55%] m-auto">
+                    <strong class="text-rose-400">What is RedHot Concepts?</strong><br>
+                    <p ><span class="text-rose-400">RedHot Concept </span>is a full-service Brand Management, Public Relations, and Content Production powerhouse. We help brands and individuals craft compelling stories, amplify their visibility, and connect deeply with their audiences—locally and globally.</p><br><br>
+
+                    <strong class="text-rose-400">What do we do?</strong><br>
+                    <p ><span class="text-rose-400"></span>RedHot Concepts From start to screen, stage to strategy, we manage the entire journey. Whether you’re a rising talent, an established brand, or an organization in need of standout storytelling, our team delivers tailor-made solutions—ranging from talent development and media exposure to film production, digital campaigns, and live events.</p><br><br>
+
+                    <strong class="text-rose-400">Who do we serve?</strong><br>
+                    <p><span class="text-rose-400">RedHot Concepts</span> serves a diverse clientele, including artists, entrepreneurs, corporate brands, government agencies, events, and influencers. If you’ve got a story or a product that deserves attention—we’re here to make it unforgettable.</p><br><br>
+
+                </div>
+                    
+                <div class="text-center my-6 ">
+                    <strong class="text-rose-400">Why work with us?</strong><br>
+                    <p class="md:w-[55%] m-auto">With over 3 decades of industry experience, global reach, and a portfolio of iconic talents like <em>Omotola Jalade Ekeinde</em> and <em>CaptainE</em>, RedHot Concepts has built a legacy of impact, innovation, and trust. We don’t just create content—we build culture.</p><br><br>
+
+                    <div class="mt-8">
+                    <h4 class="text-2xl sm:text-3xl font-bold text-center text-rose-400 mb-6">Current Projects</h4>
+                    <div class="md:grid md:grid-cols-3 gap-6 px-4">                    
+                        <!-- Omotola -->
+                        <div class="fade-in-delay-400 group text-center space-y-4 animate-[fadeInUp_1s_ease-out_forwards] opacity-0">
+                            <img class="w-[70%] mx-auto rounded-[50%] shadow-xl transition-transform duration-500 group-hover:scale-105" 
+                            src="assets/mam tee-silver.webp" 
+                            alt="Omotola">
+                            <h5 class="text-lg sm:text-xl font-semibold text-[#f6d9b4] text-center">Omotola Jalade Ekeinde</h5>
+                            <p class="text-stone-100 text-base pt-2 w-[85%] mb-6 m-auto">Iconic actress, entrepreneur, speaker, and humanitarian – currently celebrating 30 years in entertainment.</p>
+                        </div>
+
+                            <!-- CaptainE -->
+                        <div class="fade-in-delay-500">
+                            <img class="w-[70%] md:h-[415px] mx-auto rounded-[50%] shadow-xl transition-transform duration-500 group-hover:scale-105" src="assets/capE.webp" alt="CaptainE">
+                            <h5 class="text-lg sm:text-xl text-center pt-4 font-semibold text-[#f6d9b4]">CaptainE</h5>
+                            <p class="text-stone-100 pt-4 w-[85%] mb-6 m-auto">Multi-talented music producer, artist, and sound engineer known for genre-blending, high-quality music production.</p>
+                        </div>
+
+                            <!-- Omotola: The Real Me -->
+                        <div class="fade-in-delay-600">
+                            <img class="w-[70%] md:h-[420px] mx-auto rounded-[50%] shadow-xl transition-transform duration-500 group-hover:scale-105" src="https://picsum.photos/id/64/200/300" alt="Omotola Real Me">
+                            <h5 class="text-lg sm:text-xl text-center pt-6 font-semibold text-[#f6d9b4]">Omotola: The Real Me (OTRM)</h5>
+                            <p class="text-stone-100 pt-4 w-[85%] mb-6 m-auto">A pioneering African reality show exploring the personal and professional journey of Omotola.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="text-center mt-14">
+                <a href="RedhotConcept.html" class="inline-block bg-rose-500 hover:bg-rose-600 text-white text-lg font-semibold px-6 py-3 rounded-full transition shadow-lg">
+                    Learn More About What We Do
+                </a>
+                <p class="text-sm mt-4 text-stone-400">Have a project in mind or need expert guidance? Let’s talk.</p>
+                <a href="#contact" class="inline-block mt-2 text-rose-300 hover:text-white border-b border-dotted border-rose-400">
+                    Contact Us to Start Your Journey →
+                </a>
+            </div>
+            
+
+            
+            <div class="bg-stone-800/50 mt-10 p-6 rounded-lg">
+                <h4 class="text-xl font-semibold text-center text-rose-400">What Our Clients Say</h4>
+                <div class="grid sm:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <p class="italic text-sm">“Working with RedHot Concepts gave my brand a voice that resonated with my audience instantly.”</p>
+                        <p class="mt-2 font-semibold text-rose-300">— Sarah A. <br> <span class="text-rose-400">Entrepreneur</span></p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <p class="italic text-sm">“They turned our event into a media sensation. Professional, innovative, and creative!”</p>
+                        <p class="mt-2 font-semibold text-rose-300">— David M. <br> <span class="text-rose-400">PR Manager</span></p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <p class="italic text-sm">“Their production team delivered cinematic results under tight deadlines. Highly recommended.”</p>
+                        <p class="mt-2 font-semibold text-rose-300">— Linda O. <br> <span class="text-rose-400">Producer</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="mt-12 max-w-2xl mx-auto p-6 bg-black/30 rounded-lg">
+                <h4 class="text-xl font-semibold text-center text-rose-400 mb-6">Get In Touch</h4>
+                <form class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <input type="text" placeholder="Your Name" class="p-3 rounded bg-black/30 text-white placeholder-stone-400">
+                    <input type="email" placeholder="Email Address" class="p-3 rounded bg-black/30 text-white placeholder-stone-400">
+                    <input type="text" placeholder="Subject" class="p-3 rounded bg-black/30 text-white placeholder-stone-400 sm:col-span-2">
+                    <textarea rows="5" placeholder="Your Message" class="p-3 rounded bg-black/30 text-white placeholder-stone-400 sm:col-span-2"></textarea>
+                    <button type="submit" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-full font-semibold transition sm:col-span-2">Send Message</button>
+                </form>
+            </div>
+        </div>        
+    </div>
+    <footer class="bg-[#1e1e1e] text-[#e9d7c3] py-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-around items-center gap-2 md:gap-0">                        
+                <!-- Logo & Tagline -->
+                <div class="text-center md:text-left">
+                    <img src="assets/Screenshot_2025-07-11_163422-removebg-preview.png" class="h-12 mx-auto md:mx-0 mb-2" alt="RedHot Logo">
+                    <p class="text-sm">RedHot Group <br>
+                        Elevating Ideas, Talent & Entertainment</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flex flex-col md:flex-row items-center gap-4">
+                    <a href="#" class="hover:text-rose-400 transition">Home</a>
+                    <a href="RedhotConcept.html" class="text-rose-200 hover:text-rose-500 hover:underline ease-in-out mx-6">RedhotConcept</a>
+                    <a href="Doubledoors.html" class="text-rose-200 hover:text-rose-500 hover:underline ease-in-out mx-6">Double Doors Studios</a>
+                    <a href="TEFFEST.html" class="text-rose-200 hover:text-rose-500 hover:underline ease-in-out mx-6">TEFFEST</a>
+                    <a href="Oseal.html" class="text-rose-200 hover:text-rose-500 hover:underline ease-in-out mx-6">Oseal</a>
+                    <a href="#contact" class="text-rose-200 hover:text-rose-500 hover:underline ease-in-out mx-6">Contact</a>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="flex gap-4">
+                    <a href="#" aria-label="Instagram" class="hover:text-rose-400 transition">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.058 2.003.25 2.47.415a4.927 4.927 0 011.675 1.093 4.927 4.927 0 011.093 1.675c.165.467.357 1.264.415 2.47.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.058 1.206-.25 2.003-.415 2.47a4.927 4.927 0 01-1.093 1.675 4.927 4.927 0 01-1.675 1.093c-.467.165-1.264.357-2.47.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.058-2.003-.25-2.47-.415a4.927 4.927 0 01-1.675-1.093 4.927 4.927 0 01-1.093-1.675c-.165-.467-.357-1.264-.415-2.47C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.058-1.206.25-2.003.415-2.47a4.927 4.927 0 011.093-1.675 4.927 4.927 0 011.675-1.093c.467-.165 1.264-.357 2.47-.415C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.332.015 7.053.072 5.775.129 4.833.296 4.053.61a6.87 6.87 0 00-2.49 1.64A6.87 6.87 0 00.61 4.053C.296 4.833.129 5.775.072 7.053.015 8.332 0 8.741 0 12c0 3.259.015 3.668.072 4.947.057 1.278.224 2.22.538 3 .315.78.738 1.446 1.362 2.07.624.624 1.29 1.047 2.07 1.362.78.314 1.722.481 3 .538 1.279.057 1.688.072 4.947.072s3.668-.015 4.947-.072c1.278-.057 2.22-.224 3-.538a6.87 6.87 0 002.07-1.362 6.87 6.87 0 001.362-2.07c.314-.78.481-1.722.538-3 .057-1.279.072-1.688.072-4.947s-.015-3.668-.072-4.947c-.057-1.278-.224-2.22-.538-3a6.87 6.87 0 00-1.362-2.07 6.87 6.87 0 00-2.07-1.362c-.78-.314-1.722-.481-3-.538C15.668.015 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="hover:text-rose-400 transition">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.954 4.569a10 10 0 01-2.825.775A4.958 4.958 0 0023.337 3.1a10.1 10.1 0 01-3.127 1.184 4.92 4.92 0 00-8.379 4.482A13.978 13.978 0 011.671 3.15a4.822 4.822 0 001.523 6.573 4.902 4.902 0 01-2.229-.616v.06a4.936 4.936 0 003.946 4.827 4.902 4.902 0 01-2.224.084 4.937 4.937 0 004.604 3.417A9.867 9.867 0 010 19.54a13.951 13.951 0 007.548 2.209c9.057 0 14.01-7.5 14.01-14.004 0-.213-.006-.425-.017-.636a9.936 9.936 0 002.414-2.54z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center text-sm text-stone-500">
+            © 2025 RedHot Group. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

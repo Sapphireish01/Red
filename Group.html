@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSEAL Institute</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeInUp 1s ease-out forwards; }
+    .animate-on-scroll { opacity: 0; }
+  </style>
+</head>
+<body class="bg-[url('assets/studio-bg.webp')] bg-center bg-cover bg-no-repeat bg-fixed text-[#F0E5CF] font-['Raleway']">
+  <div class="bg-black/70 min-h-screen px-4">
+    <!-- Navbar -->
+    <header class="bg-black/60 text-white sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold text-rose-400">OSEAL</h1>
+        <nav x-data="{ open: false }" class="relative">
+          <button @click="open = !open" class="md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <ul class="hidden md:flex space-x-6 text-sm font-semibold">
+            <li><a href="#" class="hover:text-rose-300">Home</a></li>
+            <li><a href="#programs" class="hover:text-rose-300">Programs</a></li>
+            <li><a href="#contact" class="hover:text-rose-300">Contact</a></li>
+          </ul>
+          <ul x-show="open" x-transition class="absolute bg-black/90 right-0 mt-2 w-40 rounded-lg shadow-lg p-4 space-y-2 md:hidden">
+            <li><a href="#" class="block hover:text-rose-300">Home</a></li>
+            <li><a href="#programs" class="block hover:text-rose-300">Programs</a></li>
+            <li><a href="#contact" class="block hover:text-rose-300">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 max-w-4xl mx-auto animate-fade-in">
+      <h1 class="text-4xl sm:text-5xl font-bold text-rose-200 mb-6">OSEAL – A Space to Grow, Learn, and Express Yourself</h1>
+      <p class="text-lg text-stone-100 leading-relaxed">
+        Not everyone knows exactly where they’re headed — and that’s okay. At OSEAL (Omotola Skills, Entertainment & Lifestyle Institute), we’ve created a place for people to explore their interests, build valuable skills, and grow in confidence.
+        <br><br>
+        Whether you're a young person just discovering your strengths, a creative looking to refine your talent, or someone seeking a fresh start, OSEAL welcomes you.
+        <br><br>
+        Our programs are designed to meet you where you are — no pressure, no pretense — just real support, learning, and guidance in a space that celebrates individuality and growth.
+      </p>
+    </section>
+
+    <!-- What Is OSEAL -->
+    <section class="bg-white/10 p-8 rounded-lg border border-white/20 max-w-6xl mx-auto space-y-6">
+      <h2 class="text-3xl font-bold text-rose-400">🎯 What Is OSEAL?</h2>
+      <p>
+        OSEAL stands for <strong>Omotola Skills, Entertainment & Lifestyle Institute</strong> — a vibrant, inclusive learning space that empowers people of all ages and backgrounds to discover and develop their natural gifts.
+      </p>
+      <p>
+        We blend <strong>real-world entertainment training</strong> with <strong>personal development and lifestyle coaching</strong>, so you’re not just learning a skill — you’re becoming your best self.
+      </p>
+    </section>
+
+    <!-- What Makes OSEAL Different -->
+    <section class="max-w-6xl mx-auto mt-12 grid md:grid-cols-3 gap-6">
+      <div class="bg-white/10 p-6 rounded-lg border border-white/20">
+        <h3 class="text-xl font-semibold text-rose-300">We empower individuals</h3>
+        <p>Whether you want to sing, act, speak, create content, or just live more confidently — OSEAL equips you.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-lg border border-white/20">
+        <h3 class="text-xl font-semibold text-rose-300">We serve all age groups</h3>
+        <p>From kids to adults, beginners to pros — it’s never too early or too late to grow.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-lg border border-white/20">
+        <h3 class="text-xl font-semibold text-rose-300">We build people, not just skills</h3>
+        <p>Confidence, presence, and purpose matter as much as training.</p>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="max-w-6xl mx-auto mt-16 space-y-6">
+      <h2 class="text-3xl font-bold text-rose-400">🎤 Programs Tailored Just for You</h2>
+      <ul class="list-disc pl-5 text-lg text-stone-100 space-y-2">
+        <li><strong>Creative Skills:</strong> Acting, music, hosting, storytelling, content creation.</li>
+        <li><strong>Lifestyle Growth:</strong> Confidence, etiquette, body language, branding.</li>
+        <li><strong>Mentorship:</strong> Guidance from industry pros, live events, and showcases.</li>
+        <li><strong>Kids & Teens:</strong> Fun and empowering workshops that build self-worth.</li>
+      </ul>
+    </section>
+
+    <!-- Movement CTA -->
+    <section class="text-center mt-20">
+      <h2 class="text-3xl text-rose-400 font-bold mb-4">🔥 This Is More Than a Program — It’s a Movement</h2>
+      <p class="text-lg text-stone-100 max-w-3xl mx-auto mb-6">
+        If you’ve ever said: “I think I have something special...”, “I want to feel more confident”, “I need guidance...” — then <strong>OSEAL is your next step.</strong>
+      </p>
+      <a href="https://osealofficial.com" target="_blank" class="inline-block bg-rose-500 hover:bg-rose-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition">Join OSEAL Today</a>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="max-w-2xl mx-auto mt-20 mb-16 p-8 bg-white/10 rounded-xl border border-white/20">
+      <h3 class="text-2xl font-semibold text-rose-300 mb-4">📬 Contact Us</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Full Name" class="w-full p-3 rounded bg-white/20 text-white placeholder-stone-200" required />
+        <input type="email" placeholder="Email Address" class="w-full p-3 rounded bg-white/20 text-white placeholder-stone-200" required />
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded bg-white/20 text-white placeholder-stone-200" required></textarea>
+        <button type="submit" class="bg-rose-500 hover:bg-rose-600 text-white font-semibold px-6 py-3 rounded transition">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1e1e1e] text-[#e9d7c3] py-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p>© 2025 OSEAL Institute. All rights reserved.</p>
+          <div class="space-x-4 text-sm">
+            <a href="#" class="hover:text-rose-300">Home</a>
+            <a href="#programs" class="hover:text-rose-300">Programs</a>
+            <a href="#contact" class="hover:text-rose-300">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
